@@ -153,7 +153,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - NVIDIA Corporation
-- Rust Substrate Team
 - OpenSSL Project
 - Ring Crypto Library
 
@@ -163,8 +162,3 @@ For support, please:
 1. Check the documentation
 2. Search existing issues
 3. Create a new issue if needed
-
-## Related Projects
-
-- [nvidia-confidential-compute-pallet](https://github.com/your-org/nvidia-confidential-compute-pallet)
-- [substrate](https://github.com/paritytech/substrate)
