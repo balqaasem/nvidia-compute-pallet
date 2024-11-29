@@ -1,2 +1,3 @@
-# nvidia-compute-pallet
-Using Nvidia GPUs for compute on a blockchain
+# rust-nvtrust
+
+Rust implementation of Nvidia's [nvTrust](https://github.com/NVIDIA/nvtrust)
