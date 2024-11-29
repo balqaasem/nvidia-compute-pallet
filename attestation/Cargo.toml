@@ -1,0 +1,21 @@
+[package]
+name = "rust-nvtrust-attestation"
+version = "0.1.0"
+edition = "2021"
+authors = ["Muhammad-Jibril B. Al-Sharif <https://balqaasem.xyz>"]
+description = "Attestation module for NVTrust Rust implementation"
+
+[dependencies]
+rust-nvtrust = { path = ".." }
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+openssl = { version = "0.10", features = ["vendored"] }
+sgx-isa = "0.4"
+tdx-attest = "0.1"
+uuid = { version = "1.6", features = ["v4"] }
+jwt = "0.16"
+serde_json = "1.0"
+
+[features]
+default = ["std"]
+std = []

@@ -1,0 +1,28 @@
+[package]
+name = "rust-nvtrust"
+version = "0.1.0"
+edition = "2021"
+description = "NVIDIA Trusted Computing Library for Rust"
+authors = ["NVIDIA"]
+license = "MIT"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+ring = "0.16"
+openssl = "0.10"
+chrono = "0.4"
+uuid = { version = "1.0", features = ["v4"] }
+jwt = "0.16"
+json = "0.12"
+
+[features]
+default = ["std"]
+std = []
+
+[workspace]
+members = [
+    "attestation",
+    "confidential",
+]

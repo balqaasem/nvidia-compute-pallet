@@ -1,0 +1,25 @@
+[package]
+name = "rust-nvtrust-quote-verification"
+version = "0.1.0"
+edition = "2021"
+authors = ["Muhammad-Jibril B. Al-Sharif <https://balqaasem.xyz>"]
+description = "Quote verification module for NVTrust"
+license = "All rights reserved"
+
+[dependencies]
+rust-nvtrust = { path = ".." }
+rust-nvtrust-attestation = { path = "../attestation" }
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+openssl = { version = "0.10", features = ["vendored"] }
+ring = "0.17"
+hex = "0.4"
+base64 = "0.13"
+sha2 = "0.10"
+x509-parser = "0.15"
+rayon = "1.8"
+
+[features]
+default = ["std", "parallel"]
+std = []
+parallel = []
